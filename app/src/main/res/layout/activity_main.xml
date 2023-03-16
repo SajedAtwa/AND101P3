@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dawgin in to woofer."
+        android:textAlignment="center"
+        android:textColor="@color/Twitter_black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog or Owners name"
+        android:textColor="@color/Twitter_grey"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/user_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/Twitter_extra_gray_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/Twitter_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collar Serial number or Owners number."
+        android:textColor="@color/Twitter_grey"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/user_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textCursorDrawable= "@null"
+        android:background="@color/Twitter_extra_gray_light"
+        android:textColor="@color/Twitter_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_email" />
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:text="Woof"
+        android:backgroundTint="@color/Twitter_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_password" />
+
+    <TextView
+        android:id="@+id/password_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cant find your Collar? • Become a Woofer today."
+        android:textAlignment="center"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/Twitter_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_button"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <ImageView
+        android:id="@+id/TwitterLogo"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/twitter_logo_removebg_preview"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
